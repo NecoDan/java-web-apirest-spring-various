@@ -12,7 +12,7 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class FuncionarioService implements IFuncionarioService {
 
-    private FuncionarioRepository funcionarioRepository;
+    private final FuncionarioRepository funcionarioRepository;
 
     @Override
     public List<Funcionario> buscarTodos() {
