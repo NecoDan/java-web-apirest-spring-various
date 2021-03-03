@@ -1,4 +1,4 @@
-package br.com.curso.web.apirest.spring.various.michelli_brito.webflux;
+package br.com.curso.web.apirest.spring.various.config;
 
 import br.com.curso.web.apirest.spring.various.michelli_brito.webflux.model.Playlist;
 import br.com.curso.web.apirest.spring.various.michelli_brito.webflux.repository.PlaylistRepository;
