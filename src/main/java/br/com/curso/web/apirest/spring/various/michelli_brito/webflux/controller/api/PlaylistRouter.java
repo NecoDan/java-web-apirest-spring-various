@@ -24,5 +24,4 @@ public class PlaylistRouter {
                 .andRoute(POST(URI)
                         .and(accept(MediaType.APPLICATION_JSON)), handler::save);
     }
-
 }

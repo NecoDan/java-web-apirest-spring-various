@@ -3,6 +3,7 @@ package br.com.curso.web.apirest.spring.various.michelli_brito.webflux.controlle
 import br.com.curso.web.apirest.spring.various.michelli_brito.webflux.model.Playlist;
 import br.com.curso.web.apirest.spring.various.michelli_brito.webflux.service.PlaylistService;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.server.ServerRequest;
@@ -12,6 +13,7 @@ import reactor.core.publisher.Mono;
 import static org.springframework.web.reactive.function.BodyInserters.fromPublisher;
 
 @Component
+@Slf4j
 @RequiredArgsConstructor
 public class PlaylistHandler {
 
@@ -36,6 +38,6 @@ public class PlaylistHandler {
 
         return ServerResponse.ok()
                 .contentType(MediaType.APPLICATION_JSON)
-                .body(fromPublisher(playlistMono.flatMap(playlistService::save) , Playlist.class));
+                .body(fromPublisher(playlistMono.flatMap(playlistService::save), Playlist.class));
     }
 }
