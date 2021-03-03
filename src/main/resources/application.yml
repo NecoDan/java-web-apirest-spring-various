@@ -1,0 +1,54 @@
+spring:
+  profiles:
+    # active: homo, kafka
+    active: homo
+    # active: dev_localhost
+  main:
+    web-application-type: none
+---
+# Coloque aqui suas configurações
+spring:
+  profiles: algaworks_osworks
+app:
+  message: This is the property file to the ${spring.application.name} specific to DEV Environment
+  datasource:
+    jdbcUrl: jdbc:postgresql://postgres.prod.contabil.mateus:5432/contabil
+    username: gmdev
+    password: 4HBw3Whvq6SoLi
+    driverClassName: org.postgresql.Driver
+---
+# Coloque aqui suas configurações de Desenvolvimento homologação
+spring:
+  profiles: homo
+app:
+  datasource:
+    jdbcUrl: jdbc:postgresql://10.0.1.15:5432/contabil
+    #jdbcUrl: jdbc:postgresql://postgres.homo.contabil:5432/contabil
+    username: gmcont
+    password: BmQev2UYvkOj
+    driverClassName: org.postgresql.Driver
+ithappens:
+  ittask:
+    contexto: desenvolvimento
+logging:
+  level:
+    br:
+      com:
+        ithappens:
+          mapper: DEBUG
+---
+# Coloque aqui suas configurações de Desenvolvimento localhost
+spring:
+  profiles: dev_localhost
+logging:
+  level:
+    br:
+      com:
+        ithappens:
+          mapper: INFO
+app:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    username: danielsantos
+    password: m4st3r.dan
+    jdbcUrl: jdbc:postgresql://localhost:5432/spedfiscal
