@@ -29,4 +29,17 @@ public class FuncionarioController {
     public Funcionario criar(@RequestBody Funcionario funcionario) {
         return this.funcionarioService.salvar(funcionario);
     }
+
+    @GetMapping("/ByRangeIdade")
+    public List<Funcionario> obterFuncionariosPorIdade(
+            @RequestParam("de") Integer de,
+            @RequestParam("ate") Integer ate) {
+        return this.funcionarioService.recuperarFuncionariosPorIdade(de, ate);
+    }
+
+    @GetMapping("/ByName")
+    public List<Funcionario> obterFuncionariosPorNome(
+            @RequestParam("nome") String nome) {
+        return this.funcionarioService.recuperarFuncionariosPorNome(nome);
+    }
 }

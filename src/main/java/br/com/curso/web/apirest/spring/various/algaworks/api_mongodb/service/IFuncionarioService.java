@@ -13,4 +13,8 @@ public interface IFuncionarioService {
 
     Funcionario salvar(Funcionario funcionario);
 
+    List<Funcionario> recuperarFuncionariosPorIdade(Integer de, Integer ate);
+
+    List<Funcionario> recuperarFuncionariosPorNome(String nome);
+
 }

@@ -2,6 +2,7 @@ package br.com.curso.web.apirest.spring.various.algaworks.api_mongodb.model;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.math.BigDecimal;
@@ -14,5 +15,6 @@ public class Funcionario {
     private String nome;
     private Integer idade;
     private BigDecimal salario;
+    @DBRef
     private Funcionario chefe;
 }
