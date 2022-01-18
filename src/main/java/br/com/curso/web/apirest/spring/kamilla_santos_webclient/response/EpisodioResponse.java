@@ -1,18 +1,25 @@
 package br.com.curso.web.apirest.spring.kamilla_santos_webclient.response;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 import java.util.List;
 
 @Data
 @JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
-public class PersonagemResponse {
+public class EpisodioResponse {
 
     private String id;
+
     private String name;
-    private String status;
-    private String species;
-    private String image;
-    private List<String> episode;
+
+    @JsonProperty("air_date")
+    private String airDate;
+
+    private String episode;
+
+    private List<String> characters;
+
+    private String url;
 }

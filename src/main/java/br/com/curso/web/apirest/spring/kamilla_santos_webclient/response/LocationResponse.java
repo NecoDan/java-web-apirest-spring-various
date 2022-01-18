@@ -7,12 +7,11 @@ import java.util.List;
 
 @Data
 @JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
-public class PersonagemResponse {
+public class LocationResponse {
 
     private String id;
     private String name;
-    private String status;
-    private String species;
-    private String image;
-    private List<String> episode;
+    private String type;
+    private List<String> residents;
+    private String url;
 }
