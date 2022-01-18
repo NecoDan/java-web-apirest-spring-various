@@ -1,4 +1,4 @@
-package br.com.curso.web.apirest.spring.various.michelli_brito.webflux.model;
+package br.com.curso.web.apirest.spring.michelli_brito_playlist.model;
 
 import lombok.Builder;
 import lombok.Data;

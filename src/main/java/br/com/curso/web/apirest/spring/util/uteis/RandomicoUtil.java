@@ -1,4 +1,4 @@
-package br.com.curso.web.apirest.spring.various.util.uteis;
+package br.com.curso.web.apirest.spring.util.uteis;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;

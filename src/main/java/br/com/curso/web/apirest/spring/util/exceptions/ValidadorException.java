@@ -1,4 +1,4 @@
-package br.com.curso.web.apirest.spring.various.util.exceptions;
+package br.com.curso.web.apirest.spring.util.exceptions;
 
 public class ValidadorException extends Exception {
     public ValidadorException() {}

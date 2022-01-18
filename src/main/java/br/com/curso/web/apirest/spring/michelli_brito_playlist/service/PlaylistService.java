@@ -1,7 +1,7 @@
-package br.com.curso.web.apirest.spring.various.michelli_brito.webflux.service;
+package br.com.curso.web.apirest.spring.michelli_brito_playlist.service;
 
-import br.com.curso.web.apirest.spring.various.michelli_brito.webflux.model.Playlist;
-import br.com.curso.web.apirest.spring.various.michelli_brito.webflux.repository.PlaylistRepository;
+import br.com.curso.web.apirest.spring.michelli_brito_playlist.model.Playlist;
+import br.com.curso.web.apirest.spring.michelli_brito_playlist.repository.PlaylistRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

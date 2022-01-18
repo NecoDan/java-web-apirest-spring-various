@@ -1,12 +1,11 @@
-package br.com.curso.web.apirest.spring.various.config;
+package br.com.curso.web.apirest.spring.config;
 
-import br.com.curso.web.apirest.spring.various.michelli_brito.webflux.model.Playlist;
-import br.com.curso.web.apirest.spring.various.michelli_brito.webflux.repository.PlaylistRepository;
+import br.com.curso.web.apirest.spring.michelli_brito_playlist.model.Playlist;
+import br.com.curso.web.apirest.spring.michelli_brito_playlist.repository.PlaylistRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-import reactor.core.publisher.Flux;
 
 import java.util.UUID;
 

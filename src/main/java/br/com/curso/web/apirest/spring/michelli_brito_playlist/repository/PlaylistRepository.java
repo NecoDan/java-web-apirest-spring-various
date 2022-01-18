@@ -1,6 +1,6 @@
-package br.com.curso.web.apirest.spring.various.michelli_brito.webflux.repository;
+package br.com.curso.web.apirest.spring.michelli_brito_playlist.repository;
 
-import br.com.curso.web.apirest.spring.various.michelli_brito.webflux.model.Playlist;
+import br.com.curso.web.apirest.spring.michelli_brito_playlist.model.Playlist;
 import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
 
 public interface PlaylistRepository extends ReactiveMongoRepository<Playlist, String> {

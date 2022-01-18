@@ -1,6 +1,6 @@
-package br.com.curso.web.apirest.spring.various.michelli_brito.webflux.service;
+package br.com.curso.web.apirest.spring.michelli_brito_playlist.service;
 
-import br.com.curso.web.apirest.spring.various.michelli_brito.webflux.model.Playlist;
+import br.com.curso.web.apirest.spring.michelli_brito_playlist.model.Playlist;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 

@@ -1,4 +1,4 @@
-package br.com.curso.web.apirest.spring.various.michelli_brito.webflux.controller.api;
+package br.com.curso.web.apirest.spring.michelli_brito_playlist.controller.api;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

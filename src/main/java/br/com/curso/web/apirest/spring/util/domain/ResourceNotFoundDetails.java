@@ -1,4 +1,4 @@
-package br.com.curso.web.apirest.spring.various.util.domain;
+package br.com.curso.web.apirest.spring.util.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

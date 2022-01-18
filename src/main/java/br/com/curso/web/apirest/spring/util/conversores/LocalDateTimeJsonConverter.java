@@ -1,4 +1,4 @@
-package br.com.curso.web.apirest.spring.various.util.conversores;
+package br.com.curso.web.apirest.spring.util.conversores;
 
 import com.google.gson.*;
 
